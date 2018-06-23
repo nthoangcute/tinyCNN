@@ -1,7 +1,7 @@
 # tinyCNN
 > Very simple convolutional neural network by Java
 ## INSTALLING
-Download the MNIST or EMNIST dataset from [Here](https://drive.google.com/drive/folders/10MfF2F5M40NxEFLSpaHWCMo4y8yEMivI?usp=sharing).
+Download the MNIST or EMNIST dataset from [here](https://drive.google.com/drive/folders/10MfF2F5M40NxEFLSpaHWCMo4y8yEMivI?usp=sharing).
 
 Change your path in **trainFile** and **testFile**. 
 ```
