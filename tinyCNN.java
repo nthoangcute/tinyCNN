@@ -71,7 +71,6 @@ public class tinyCNN {
 		trainData = new double[lines.size()][28][28];
 		trainLabel = new double[lines.size()];
 		readFile(lines, trainData, trainLabel);
-
 	}
 
 	public void readTestFile(String filePath) throws Exception {
@@ -152,9 +151,8 @@ public class tinyCNN {
 	}
 
 	public void setSampOutput(Layer layer, Layer pLayer) {
-		for (int i = 0; i < pLayer.mapNum; i++) {
+		for (int i = 0; i < pLayer.mapNum; i++)
 			layer.maps[batchIndex][i] = scale(pLayer.maps[batchIndex][i], layer.scaleSize);
-		}
 	}
 
 	public void backPropagation(double label) {
@@ -236,7 +234,6 @@ public class tinyCNN {
 			for (int j = 0; j < m[0].length; j++)
 				x[j] = 1 / (1 + Math.pow(Math.E, -bias - x[j]));
 		return m;
-
 	}
 
 	public double[][] plus(double[][] x, double[][] y) {
@@ -308,7 +305,6 @@ public class tinyCNN {
 			for (int j = 0; j < m[0].length; j++)
 				x[j] = x[j] / batchSize;
 		return m;
-
 	}
 
 	public double[][] mul3(double[][] x, double[][] y) {
