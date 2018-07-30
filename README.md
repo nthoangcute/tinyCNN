@@ -19,7 +19,7 @@ After that, run this code with your Java IDE or by linux command line:
   java tinyCNN
 ```
 ## PERFORMANCE
-This program runs with only 1 CPU, so it takes a long time to get the best accuracy.
+This program runs with all CPUs (updated).
 
 ### MNIST Digits Dataset
 
